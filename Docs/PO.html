@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Posters - Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      font-family: 'Niramit', sans-serif;
+      background-color: #000;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }   
+
+    ::-webkit-scrollbar-track {
+        background: black;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 5px;
+    }
+    
+    .header-title {
+      font-family: 'Niramit', sans-serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #FFFFFF;
+      text-align: center;
+      -webkit-text-stroke: 0.5px #FFFFFF;
+      letter-spacing: -1.9px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      background-color: #000;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+    .header-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 1rem;
+    }
+    nav.desktop-nav {
+      display: flex;
+      gap: 0.2rem;
+      margin-right: -1.3rem;
+    }
+    nav.desktop-nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.83rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    nav.desktop-nav a:hover { background-color: #444; }
+    nav.desktop-nav a.active { background-color: #fff; color: #000; }
+    .mobile-menu-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: none;
+    }
+    .mobile-menu-toggle .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 4px 0;
+      background-color: #fff;
+      transition: 0.4s;
+    }
+    nav.mobile-nav {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.95);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+      visibility: hidden;
+    }
+    nav.mobile-nav.open {
+      max-height: 100vh;
+      visibility: visible;
+    }
+    nav.mobile-nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #444;
+      font-size: 0.9rem;
+      display: block;
+    }
+    nav.mobile-nav a.active { background-color: #fff; color: #000; }
+    nav.mobile-nav a:hover { background-color: #444; }
+    .content {
+      flex: 1;
+      max-width: 800px;
+      width: 100%;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 1;
+    }
+    section { padding: 2rem; animation: fadeIn 0.5s ease; }
+
+    h1 { margin-bottom: 1rem; font-family: 'Outfit', sans-serif; font-size: 1.97rem; text-align: center;}
+    h2 { margin: 1.5rem 0 1rem; font-family: 'Outfit', sans-serif; }
+    p { margin-bottom: 1rem; text-align: justify; }
+    ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+    li { margin-bottom: 0.5rem; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    footer {
+      background-color: #000;
+      color: #b8b6b6;
+      padding: 1rem 2rem;
+      z-index: 1;
+    }
+    .footer-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .footer-links { text-align: center; }
+    .footer-links a {
+      color: #b8b6b6;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin: 0 0.1rem;
+      transition: color 0.3s;
+    }
+    .footer-links a:hover { color: #fff; }
+    .footer-rights { font-size: 0.8rem; text-align: center;}
+
+    .kofi-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+        height: 45px;
+        overflow: hidden;
+    } 
+
+    .kofi-container iframe {
+        transform: scale(0.9);  
+        transform-origin: center;
+        margin: -10px 0;
+}
+    .kofi-nav-container {
+        display: flex;
+        justify-content: center;
+        margin-top: -0.45rem;
+    }
+    @media (max-width: 768px) {
+      header { grid-template-columns: 1fr auto 1fr; padding: 1rem; }
+      .header-title { font-size: 1.5rem; }
+      nav.desktop-nav { display: none; }
+      .mobile-menu-toggle { display: block; }
+      .content { margin-top: 1rem; width: 85%; }
+      .mobile-menu-toggle.active .bar:nth-child(1) { transform: rotate(-45deg) translate(-5px, 6px); }
+      .mobile-menu-toggle.active .bar:nth-child(2) { opacity: 0; }
+      .mobile-menu-toggle.active .bar:nth-child(3) { transform: rotate(45deg) translate(-5px, -6px); }
+      h1 {font-size: 0.7rem;}
+      .kofi-container {margin-top: 2rem;}
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 15px;
+      gap: 15px;
+      background-color: #000;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      transition: 400ms;
+    }
+    .button .text {
+      color: white;
+      font-weight: 700;
+      font-size: 1em;
+      transition: 400ms;
+    }
+    .button svg path {
+      transition: 400ms;
+    }
+    .button:hover {
+      background-color: #fff;
+    }
+    .button:hover svg path {
+      fill: #000;
+    }
+
+    .kofi-mobile-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    .kofi-mobile-container iframe {
+        transform: scale(0.8);
+        transform-origin: center;
+        margin: -10px 0;
+    }
+    .kofi-mobile-container iframe[src*="ko-fi.com"] {
+        background: transparent !important;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="https://github.com/ilaxi/lomi" class="header-left" target="_blank">
+      <button class="button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z" fill="white"></path>
+        </svg>
+      </button>
+    </a>
+    <div class="header-title">posters</div>
+    <div class="header-right">
+      <nav class="desktop-nav">
+        <a href="PP.html" class="menu-item" data-target="privacy">Privacy Policy</a>
+        <a href="NC.html" class="menu-item" data-target="Guidelines">Community Guidelines</a>
+        <a href="FA.html" class="menu-item" data-target="updates">Future Updates</a>
+        <div class="kofi-nav-container">
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support on Ko-fi', '#000000', 'V7V71BK8G4');kofiwidget2.draw();</script> 
+        </div>
+      </nav>
+      <button id="menu-toggle" class="mobile-menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="PP.html" class="menu-item" data-target="privacy">Privacy Policy</a>
+    <a href="NC.html" class="menu-item" data-target="Guidelines">Community Guidelines</a>
+    <a href="FA.html" class="menu-item" data-target="updates">Future Updates</a>
+    <div class="kofi-mobile-container">
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support on Ko-fi', '#000000', 'V7V71BK8G4');kofiwidget2.draw();</script> 
+        </div>  </nav>
+  <div class="content">
+    <section id="privacy" class="active">
+      <h1>POSTERS ARE NOT YET OFFICIALLY AVAILABLE</h1>
+      <p>Posters is currently in a "closed testing" phase, as the goal of raising $50 has not yet been met to acquire a stable hosting service with a custom domain. If you wish to support the development of the website and gain immediate access, you can contribute any amount you choose via my Ko-fi profile. By donating as little as $1, you will receive direct access to the closed testing of Posters. Please note that the website is currently hosted on a free subdomain with a free hosting plan, which may result in instability, connection issues, or slow interactions. For more detailed information regarding the current status of the website, available features, the development process, and the purpose of the donation request, you can visit the website's blog on Ko-fi. Additionally, you can donate directly there to support the project. A donation widget is provided below for your convenience.</p>
+      <div class="kofi-container">
+      <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support on Ko-fi', '#000000', 'V7V71BK8G4');kofiwidget2.draw();</script> 
+      </div>  
+     </section>
+  </div>
+  <div class="footer-inner">
+  <footer>
+      <div class="footer-links">
+        <a href="PO.html">Web</a>
+        <a href="CT.html">Contact</a>
+      </div>
+      <p class="footer-rights">Developed with love by Franco.</p>
+    </div>
+  </footer>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+    menuToggle.addEventListener('click', () => {
+      mobileNav.classList.toggle('open');
+      menuToggle.classList.toggle('active');
+    });
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        mobileNav.classList.remove('open');
+        menuToggle.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
