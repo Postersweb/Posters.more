@@ -26,7 +26,7 @@
     
     .content {
       flex: 1;
-      max-width: 800px;
+      max-width: 600px;
       width: 100%;
       margin: 2rem auto;
       padding: 0 1rem;
@@ -37,11 +37,11 @@
     }
     section { padding: 2rem; animation: fadeIn 0.5s ease; }
 
-    h1 { margin-bottom: 1rem; font-family: 'Outfit', sans-serif; font-size: 2rem; text-align: center; }
-    h2 { margin: 1.5rem 0 1rem; font-family: 'Outfit', sans-serif; }
-    p { margin-bottom: 1rem; text-align: justify; }
+    h1 { margin-bottom: 1rem; font-family: 'Outfit', sans-serif; font-size: 1.9rem; text-align: center;}
+    h2 { margin: 2rem 0 1rem; font-family: 'Outfit', sans-serif; }
+    p { margin-bottom: 13rem; text-align: center; }
     ul { margin-left: 1.5rem; margin-bottom: 1rem; }
-    li { margin-bottom: 0.5rem; }
+    li { margin-bottom: 1.5rem; }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
@@ -51,8 +51,39 @@
         justify-content: center;
         margin-top: -0.45rem;
     }
+
     .contact-item {
       white-space: nowrap;
+    }
+
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .social-icon img {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.3s ease;
+    }	
+    .email-icon img {
+      width: 42px;
+      height: 42px;
+      margin-top: -3.5px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icon img[alt="Instagram"] {
+      width: 37px;
+      height: 37px;
+      margin-top: -1.5px;
+    }
+
+    .social-icon:hover img,
+    .email-icon:hover img {
+      transform: scale(1.2);
     }
     
     @media (max-width: 1280px) and (min-width: 1093px) {
@@ -71,11 +102,30 @@
       .mobile-menu-toggle.active .bar:nth-child(2) { opacity: 0; }
       .mobile-menu-toggle.active .bar:nth-child(3) { transform: rotate(45deg) translate(-5px, -6px); }
       h1 { font-size: 2rem; }
+      h2 { font-size: 1rem; }
       .contact-item {
         font-size: 0.65rem;
       }
       .footer-links a {
         font-size: 0.75rem;
+      }
+
+      .social-icon img {
+        width: 28px;
+        height: 28px;
+        transition: transform 0.3s ease;
+      }	
+      .email-icon img {
+        width: 38px;
+        height: 38px;
+        margin-top: -3.5px;
+        transition: transform 0.3s ease;
+      }
+
+      .social-icon img[alt="Instagram"] {
+        width: 33px;
+        height: 33px;
+        margin-top: -1.5px;
       }
     }
 
@@ -93,6 +143,25 @@
     .kofi-mobile-container iframe[src*="ko-fi.com"] {
         background: transparent !important;
     }
+
+    .contact-link {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    }
+
+    .contact-link:hover {
+      color: #003366;
+      text-decoration: underline;
+    }
+
+    .contact-section {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+
+
   </style>
 </head>
 <body>
@@ -134,15 +203,32 @@
   <div class="content">
     <section id="privacy" class="active">
       <h1>CONTACT</h1>
-      <p>
-        <strong>CONTACT WITH POSTERS:</strong><br>
-        <strong>EMAIL:</strong><br> <a href="mailto:postersweb@gmail.com" target="_blank">postersweb@gmail.com</a><br><br>
-        <strong>DEVELOPER CONTACT:</strong><br>
-        <strong>Instagram:</strong><br> <a href="https://www.instagram.com/fffranqo/" target="_blank">https://www.instagram.com/fffranqo/</a><br><br>
-        <strong>GitHub:</strong><br> <a href="https://github.com/ilaxi" target="_blank">https://github.com/ilaxi</a><br><br>
-        <strong>Twitter:</strong><br> <a href="https://x.com/hetaitereima" target="_blank">https://x.com/hetaitereima</a><br><br>
-        <strong>EMAIL:</strong><br> <a href="mailto:francoaayal@gmail.com" target="_blank">francoaayal@gmail.com</a>
-      </p>
+      <div class="contact-section">
+        <h2>CONTACT WITH POSTERS</h2>
+        <div class="icon-container">
+          <a href="mailto:postersweb@gmail.com" class="contact-link email-icon">
+            <img src="../media/gmail.svg" alt="Email">
+          </a>
+        </div>
+      </div>
+      
+      <div class="contact-section">
+        <h2>DEVELOPER CONTACT</h2>
+        <div class="icon-container">
+          <a href="https://www.instagram.com/fffranqo/" class="contact-link social-icon" target="_blank">
+            <img src="../media/instagramsvg.svg" alt="Instagram">
+          </a>
+          <a href="https://github.com/ilaxi" class="contact-link social-icon" target="_blank">
+            <img src="../media/github.svg" alt="GitHub">
+          </a>
+          <a href="https://www.tumblr.com/blog/fraanko" class="contact-link social-icon" target="_blank">
+            <img src="../media/tumblr.svg" alt="Tumblr">
+          </a>
+          <a href="mailto:francoaayal@gmail.com" class="contact-link email-icon">
+            <img src="../media/gmail.svg" alt="Email">
+          </a>
+        </div>
+      </div>
     </section>
   </div>
   <div class="footer-inner">
