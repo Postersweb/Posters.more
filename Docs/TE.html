@@ -138,7 +138,11 @@
       }
 
       .credit-role {
-        font-size: 0.55rem;
+        font-size: 0.8rem;
+      }
+
+      .credit-name {
+        font-size: 0.9rem;
       }
     }
   </style>
@@ -181,8 +185,18 @@
         Made with love from Paraguay❤️
       </div>
       
-      <button class="back-button" onclick="history.back()">Back</button>
+      <button class="back-button" onclick="goBack()">Back</button>
     </section>
   </div>
+
+  <script>
+    function goBack() {
+      if (window.history.length > 1 && document.referrer) {
+        window.history.back();
+      } else {
+        window.location.href = 'PP.html';
+      }
+    }
+  </script>
 </body>
 </html>

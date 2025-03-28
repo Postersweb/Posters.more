@@ -138,8 +138,7 @@
   }
   
   .footer-links a:hover { color: #fff; }
-  .footer-rights { font-size: 0.8rem; text-align: center;}
-
+  
   .button {
     display: flex;
     justify-content: center;
